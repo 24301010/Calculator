@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="jonathan-lampel-L9wrEGJjRdo-unsplash.jpg" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Keyboard</title>
+    <style>
+        body{
+           background-color: whitesmoke;
+          
+        }
+        .div1{
+            width: 800px;
+            height: 290px;
+            background-color: rgb(156, 156, 156);
+            margin: auto;
+            transform: scale(1.3);
+            margin-top: 300px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 3px inset black;
+            transition: .3s;
+        }
+      
+        .div2{
+            width: 100%;
+            height: 52px;
+           
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            line-height: 10px;
+    
+        }
+        button{
+            width: 60px;
+            height: 50px;
+            transform: scale(.7);
+            border-radius: 30px;
+            border: 2px inset white;
+            font-family: Maven Pro;
+            background-color: black;
+            color: cyan;
+            transition: .3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .small-btn{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-top: 15px;
+            border: 1px solid white;
+            background-image: radial-gradient(gray,black);
+        }
+        .volium{
+            width: 70px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: radial-gradient(white,silver);
+            transform: scale(.8);
+            
+        }
+        button:hover{
+            box-shadow: 1px 1px 10px white;
+            color: red;
+        }
+        button:focus{
+            color: yellow;
+        }
+        .volium:hover{
+            background-image: radial-gradient(white,red);
+        }
+        .div3{
+            width: 68%;
+            height: 52px;
+
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+    
+        }
+        .aro{
+            width: 100px;
+            position: relative;
+            left: 3px;
+            transform: scale(.8);
+        }
+        .bujlam-na{
+            width: 100px;
+            margin-left: -5px;
+            position: relative;
+            left: 7px;
+            transform: scale(.8);
+        }
+        #ins{
+            width: 70px;
+            margin-right: -20px;
+        }
+        .ki-olo{
+            margin: 0;
+        }
+        .div4{
+            width: 68%;
+            height: 52px;
+     
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            margin-top: -8px;
+    
+        }
+        .div5{
+            width: 68%;
+            height: 52px;
+    
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            margin-top: -8px;
+    
+        }
+        .div6{
+            width: 68%;
+            height: 52px;
+     
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            margin-top: -8px;
+    
+        }
+        .div7{
+            width: 68%;
+            height: 52px;
+
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            margin-top: -8px;
+    
+        }
+        #dash{
+            width: 700px;
+            margin-left: -12px;
+        }
+        #sht{
+            width: 250px;
+           
+        }
+
+        #sht2{
+            width: 250px;
+            margin-left: -8px;
+        }
+        #caps{
+            width: 200px;
+            margin-left: -8px;
+        }
+        #enter{
+            width: 200px;
+        }
+        #tab{
+            width: 170px;
+            margin-left: -8px;
+        }
+        #ss{
+            width: 170px;
+        }
+        #entre{
+            width: 220px;
+        }
+        .div8{
+          
+            max-width: 110px;
+            height: 75%;
+            position: relative;
+            left: 545px;
+            top: -220px;
+           
+        }
+        .div9{
+           
+            width: 130px;
+            height: 75%;
+            position: relative;
+            left: 655px;
+            top: -433px;
+        }
+        .div8 button{
+           width: 40px;
+           height: 50px;
+           font-size: 10px;
+           text-align: center;
+        }
+        #home{
+           position: relative;
+           left: -10px
+        }
+        #pg{
+            position: relative;
+            right: -68px;
+            top: -50px
+        }
+        #del{
+            position: relative;
+            left: -44px;
+            top: -11px;
+        }
+        #end{
+            position: relative;
+            left: 33px;
+            top: -61px;
+        }
+        #pc{
+            position: relative;
+            left: 23px;
+            top: -61px;
+        }
+      .png{
+        width: 50px;
+        position: relative;
+        left: 30px;
+        top: -55px;
+        filter: brightness(100);
+        box-sizing: border-box;
+      }
+      #up-btn{
+          position: relative;
+          left: -20px;
+          top: -25px;
+      }
+      #left-btn{
+             position: relative;
+             left: 0px;
+             top: -35px
+      }
+      #down-btn{
+             position: relative;
+             left: -10px;
+             top: -35px
+      }
+      #right-btn{
+             position: relative;
+             left: 68px;
+             top: -85px
+      }
+      .num{
+        width: 42px;
+        position: relative;
+        left: -5px;
+        transform: scale(.7);
+        top: -5px;
+      }
+      .divi{
+        width: 42px;
+        position: relative;
+       left: -17px;
+       top: -6px;
+      }
+      .sub{
+        width: 42px;
+        position: relative;
+       left: 63px;
+       top: -56px;
+      }
+      .min{
+        width: 42px;
+        position: relative;
+       left: 51px;
+       top: -56px;
+      }
+      .seven{
+        width: 42px;
+        position: relative;
+        left: -5px;
+        transform: scale(.7);
+        top: -60px;
+      }
+      .eight{
+        width: 42px;
+        position: relative;
+       left: -17px;
+       top: -61px;
+      }
+      .nine{
+        width: 42px;
+        position: relative;
+       left: 63px;
+       top: -146px;
+       height: 52px;
+      }
+      .plus{
+        width: 42px;
+        position: relative;
+       left: 51px;
+       top: -122px;
+       height: 120px;
+      }
+      .four{
+        width: 42px;
+        position: relative;
+        left: -5px;
+        transform: scale(.7);
+        top: -186px;
+      }
+      .five{
+        width: 42px;
+        position: relative;
+       left: -17px;
+       top: -187px;
+      }
+      .six{
+        width: 42px;
+        position: relative;
+       left: 63px;
+       top: -238px;
+       height: 52px;
+      }
+      .one{
+        width: 42px;
+        position: relative;
+        left: -50px;
+        transform: scale(.7);
+        top: -193px;
+      }
+      .two{
+        width: 42px;
+        position: relative;
+       left: 30px;
+       top: -245px;
+      }
+      .three{
+        width: 42px;
+        position: relative;
+       left: 18px;
+       top: -245px;
+       height: 52px;
+      }
+      .enn{
+        width: 42px;
+        position: relative;
+       left: 97px;
+       top: -304px;
+       height: 110px;
+      }
+      .nut{
+        width: 90px;
+        height: 45px;
+        position: relative;
+        left: -12px;
+        transform: scale(.7);
+        top: -360px;
+      }
+      .deel{
+        width: 42px;
+        position: relative;
+       left: 63px;
+       top: -410px;
+       height: 52px;
+      }
+    .iv{
+        color: red;
+    }
+    @media only screen and (max-width: 600px) {
+        body{
+           max-width: 600px;
+        }
+        .div1{
+            transform: scale(1) rotate(-90deg);
+          position: relative;
+          
+         
+
+        }
+    }
+    @media only screen and (max-width: 1100px) {
+        .div1{
+            transform: scale(1) rotate(-90deg);
+          position: relative;
+          
+         
+
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+         <div class="div2">
+            <button> ESC</button>
+            <button> F1</button>
+            <button> F2 </button>
+            <button> F3 </button>
+            <button> F4 </button>
+            <button> F5</button>
+            <button> F6 </button>
+            <button> F7 </button>
+            <button> F8 </button>
+            <button> F9 </button>
+            <button> F10 </button>
+            <button> F11 </button>
+            <button> F12</button>
+            <button> PTSC </button>
+            <button> SCLK </button>
+            <button> PABK </button>
+            <button class="small-btn">  </button>
+            <button  class="small-btn">  </button>
+            <button  class="small-btn">  </button>
+            <button class="volium">  </button>
+        
+        
+        </div>
+        <div class="div3">
+            <button class="bujlam-na"> `~</button>
+            <button class="bujlam-na"> 1!</button>
+            <button class="bujlam-na"> 2@</button>
+            <button class="bujlam-na"> 3# </button>
+            <button class="bujlam-na"> 4$ </button>
+            <button class="bujlam-na"> 5%</button>
+            <button class="bujlam-na"> 6^ </button>
+            <button class="bujlam-na"> 7& </button>
+            <button class="bujlam-na"> 8* </button>
+            <button class="bujlam-na"> 9﹙</button>
+            <button class="bujlam-na"> 0﹚ </button>
+            <button class="bujlam-na"> -_ </button>
+            <button class="bujlam-na"> =+</button>
+            <button id="entre" class="aro"> ← </button>
+           
+        </div>
+        <div class="div4">
+            <button id="tab" class="bujlam-na"> TAB </button>
+            <button class="bujlam-na"> Q </button>
+            <button class="bujlam-na"> W </button>
+            <button class="bujlam-na"> E </button>
+            <button class="bujlam-na"> R </button>
+            <button class="bujlam-na"> T</button>
+            <button class="bujlam-na"> Y </button>
+            <button class="bujlam-na"> U </button>
+            <button class="bujlam-na"> I </button>
+            <button class="bujlam-na"> O</button>
+            <button class="bujlam-na"> P </button>
+            <button class="bujlam-na"> [﹛ </button>
+            <button class="bujlam-na"> ]&nbsp;﹜</button>
+            <button id="ss" class="aro"> \&nbsp;|</button>
+        </div>
+        <div class="div5">
+            <button id="caps" class="bujlam-na"> CAPS</button>
+            <button class="bujlam-na"> A</button>
+            <button class="bujlam-na"> S</button>
+            <button class="bujlam-na"> D </button>
+            <button class="bujlam-na"> F </button>
+            <button class="bujlam-na"> G</button>
+            <button class="bujlam-na"> H </button>
+            <button class="bujlam-na"> J </button>
+            <button class="bujlam-na"> K </button>
+            <button class="bujlam-na"> L</button>
+            <button class="bujlam-na"> ;&nbsp;: </button>
+            <button class="bujlam-na"> '&nbsp;"</button>
+            <button id="enter" class="bujlam-na"> &#9166;</button>
+  
+        </div>
+        <div class="div6">
+            <button id="sht2" class="bujlam-na"> SHIFT</button>
+            <button class="bujlam-na"> Z</button>
+            <button class="bujlam-na"> X</button>
+            <button class="bujlam-na"> C </button>
+            <button class="bujlam-na"> V </button>
+            <button class="bujlam-na"> B</button>
+            <button class="bujlam-na"> N</button>
+            <button class="bujlam-na"> M </button>
+            <button class="bujlam-na"> ,&nbsp;&lt; </button>
+            <button class="bujlam-na"> .&nbsp;&gt;</button>
+            <button class="bujlam-na"> /&nbsp;? </button>
+            <button id="sht" class="bujlam-na"> SHIFT </button>
+         
+        </div>
+        <div class="div7">
+            <button class="bujlam-na"> CTRL</button>
+            <button class="bujlam-na"> </button>
+            <button class="bujlam-na"> ALT</button>
+            <button id="dash" class="bujlam-na"> - </button>
+            <button class="bujlam-na"> ALT </button>
+            <button class="bujlam-na"> FN</button>
+            <button class="bujlam-na">  <i class="fa fa-windows" aria-hidden="true"></i> </button>
+            <button class="bujlam-na"> CTRL </button>
+         
+         
+        </div>
+
+        <div class="div8">
+            <button> INS</button>
+            <button id="home"> HOME</button>
+            <button id="pg"> PGUP</button> 
+            <button id="del"> DEL </button>
+            <button id="end"> END </button>
+            <button id="pc"> PCDN </button>
+            <img class="png" src="rtyh.png"/>
+            <button id="up-btn"> <span class="up"> ⮝</span> </button>
+            <button id="left-btn"> <span class="up"> ⮜</span> </button>
+            <button id="down-btn"> <span class="up"> ⮟</span> </button>
+            <button id="right-btn"> <span class="up"> ⮞</span> </button>
+          
+        </div>
+        <div class="div9">
+                <button class="num"> NUM </button>
+                <button class="divi"> / </button>
+                <button class="sub"> * </button>
+                <button class="min"> - </button>
+                <button class="seven"> 7 </button>
+                <button class="eight"> 8 ⮝</button>
+                <button class="nine"> 9</button>
+                <button class="plus"> +</button>
+                <button class="four"> 4⮜ </button>
+                <button class="five"> 5</button>
+                <button class="six"> 6 ⮞</button>
+                <button class="one"> 1</button>
+                <button class="two"> 2⮟</button>
+                <button class="three"> 3</button>
+                <button class="enn"> &#9166; </button>
+                <button class="nut"> 0 &nbsp;INS</button>
+                <button class="deel"> .DEL</button>
+                
+        </div>
+    </div>
+
+
+</body>
+</html>
